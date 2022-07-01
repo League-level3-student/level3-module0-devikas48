@@ -1,5 +1,6 @@
 package _00_Intro_To_Arrays;
 
+import java.util.Iterator;
 import java.util.Random;
 
 import javax.swing.JOptionPane;
@@ -8,10 +9,18 @@ import org.jointheleague.graphical.robot.Robot;
 
 public class _02_RobotRace {
     // 1. make a main method
-
+	public static void main(String[] args) {
+		
+	
         // 2. create an array of 5 robots.
+Robot[] robot = new Robot[5];
 
         // 3. use a for loop to initialize the robots.
+for (Robot i: robot) {
+	System.out.println(i);
+	
+}
+System.out.println("\n");
 
         // 4. make each robot start at the bottom of the screen, side by side, facing up
     
@@ -27,4 +36,5 @@ public class _02_RobotRace {
     
         // 9. make the robots race around a circular track.
 
+}
 }

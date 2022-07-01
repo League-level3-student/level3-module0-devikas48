@@ -84,10 +84,25 @@ System.out.println("////////////////");
 
         // 10 print the entire array to see if step 8 was correct
     	System.out.println(ints);
+    	
+    	System.out.println("////////////////");
+
 
         // 11. print the largest number in the array.
+    	for (int i = 0; i < ints.length; i++) {
+			for (int j = i + 1; j < ints.length; j++) {
+				if(ints[i]>ints[j]) {
+					temp = ints[i];
+					ints[i] = ints[j];
+					ints[j] = temp;
+				}
+			}
+		}
+    	System.out.println("Largest number is:" +ints[size-1]);
+    	
+    	System.out.println("////////////////");
 
         // 12. print only the last element in the array
-
+System.out.println(ints[ints.length-1]);
     }
 }
