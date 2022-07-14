@@ -83,8 +83,9 @@ System.out.println("////////////////");
     	System.out.println("////////////////");
 
         // 10 print the entire array to see if step 8 was correct
-    	System.out.println(ints);
-    	
+    	for (int i = 0; i < ints.length; i++) {
+    		System.out.println(i);
+    	}
     	System.out.println("////////////////");
 
 
